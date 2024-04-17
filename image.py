@@ -5,4 +5,4 @@ img  = Image.open('./images/pikachu.jpg')
 
 
 
-# print(dir(img))
+print(dir(img))
