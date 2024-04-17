@@ -19,7 +19,11 @@ image_resize.save('grey.png', 'png')
 #crop image
 box = (100,100,400,400)
 region = image_resize.crop(box)
-region.show()
+
+#thumbnail
+img_th  = Image.open('./images/astro.jpg')
+img_th.thumbnail((100,100))
+img_th.save('thumbnail.jpg')
 
 # filter_img.show()
 # print(dir(img))
